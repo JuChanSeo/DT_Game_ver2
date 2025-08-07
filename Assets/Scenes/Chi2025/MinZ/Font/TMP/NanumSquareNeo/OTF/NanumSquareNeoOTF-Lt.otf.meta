@@ -1,0 +1,24 @@
+fileFormatVersion: 2
+guid: 239d434aef0df410f97a8701de726756
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - NanumSquare Neo OTF
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 00166961e75ed4d0e9c14d76d26f9193, type: 3}
+  - {fileID: 12800000, guid: 6250a132f7f2348c3a5ff38bed82743c, type: 3}
+  - {fileID: 12800000, guid: 15b7f6e644ce34f69b2f94c64f1f0856, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

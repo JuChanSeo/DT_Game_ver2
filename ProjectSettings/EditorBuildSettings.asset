@@ -1,0 +1,93 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Chi2025/Scenes/00_LoginPage_MZ.unity
+    guid: a384d370ca9de47c49703b9fdae10f57
+  - enabled: 1
+    path: Assets/Scenes/Chi2025/Scenes/01_Statue_MZ.unity
+    guid: 0f8f444143d764eb9809e552babb28fa
+  - enabled: 1
+    path: Assets/Scenes/Chi2025/Scenes/10_AR_interaction_MZ.unity
+    guid: 78d47b8c0079e4508b8d8c284457e67a
+  - enabled: 1
+    path: Assets/Scenes/Chi2025/Scenes/20_Virtual__feeding.unity
+    guid: 97bfe2bf6bbec400e8c2e5851ede0159
+  - enabled: 1
+    path: Assets/Scenes/Chi2025/Scenes/20_Virtual__feeding_tutorial.unity
+    guid: 801ed1d6760484839a11eaf82bf6b433
+  - enabled: 1
+    path: Assets/Scenes/Chi2025/Scenes/21_Virtual__sleeping.unity
+    guid: ebb3ac75ecb394e4b940f1a1d9fc12fc
+  - enabled: 1
+    path: Assets/Scenes/Chi2025/Scenes/21_Virtual__sleeping_tutorial.unity
+    guid: ed8aba4de078a43048b89737096a9fd5
+  - enabled: 1
+    path: Assets/Scenes/Chi2025/Scenes/22_Virtual__washing.unity
+    guid: 0b2886b31de0a4d4eb6fefcb12ad4693
+  - enabled: 1
+    path: Assets/Scenes/Chi2025/Scenes/22_Virtual__washing_tutorial.unity
+    guid: 6ef25f243136c465e941b1dd8dbd53ce
+  - enabled: 1
+    path: Assets/Scenes/Chi2025/Scenes/23_Virtual_intimating.unity
+    guid: fb126c37d982a4aeaa488b8567d2976f
+  - enabled: 1
+    path: Assets/Scenes/Chi2025/Scenes/23_Virtual_intimating_tutorial.unity
+    guid: 740fbafe1fa034d4380111137075716e
+  - enabled: 1
+    path: Assets/Scenes/Chi2025/Scenes/24_Virtual_agility.unity
+    guid: 99a3fbe51471d47d69c6f9f1f7e39930
+  - enabled: 1
+    path: Assets/Scenes/Chi2025/Scenes/24_Virtual_agility_tutorial.unity
+    guid: 25876a4ec09c1423a8522047b633364e
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: Assets/Scenes/Chi2025/Games_Scenes/Chapter1.unity
+    guid: f2845d85af91649a1a6f21dc722c8bf0
+  - enabled: 0
+    path: Assets/Scenes/Chi2025/Games_Scenes/Chapter5.unity
+    guid: 5db47360859d48b418238d706d60dfc7
+  - enabled: 0
+    path: Assets/Scenes/Chi2025/Games_Scenes/Game3.unity
+    guid: ef41b8612eefa4263a9ebefc80fee9d8
+  - enabled: 0
+    path: Assets/Scenes/Chi2025/Games_Scenes/Statue.unity
+    guid: 438300c6c1606e040a8ded35580e8bc8
+  - enabled: 0
+    path: Assets/Scenes/Chi2025/Games_Scenes/Tutorial.unity
+    guid: 91509d366acec4497a6faf2828415309
+  - enabled: 0
+    path: Assets/Scenes/Chi2025/Games_Scenes/Tutorial_Game3.unity
+    guid: 835b74509a1f84f87bdeead7d11b36cb
+  m_configObjects:
+    AR Foundation RemoteARFoundationRemoteLoaderSettings: {fileID: 11400000, guid: 250864ddf32664a28ad6cc7dfd4b9772,
+      type: 2}
+    Unity.XR.WindowsMR.Settings: {fileID: 11400000, guid: c52d3bb36b4c86f47af54ab9c7a02589,
+      type: 2}
+    UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: f8ce26fe3bc69499b9be4b2378e97a94,
+      type: 2}
+    UnityEditor.XR.ARKit.ARKitSettings: {fileID: 11400000, guid: 98c79e8cc22674a89a95a3a90e2b70cb,
+      type: 2}
+    com.unity.xr.arfoundation.simulation_settings: {fileID: 11400000, guid: 302e9f36808117f4184b07b05ca5bb47,
+      type: 2}
+    com.unity.xr.arkit.PlayerSettings: {fileID: 11400000, guid: 2d5fb8e61571b4e3897f221189089fd6,
+      type: 2}
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: e2f869774b12e400996eb546603602e3,
+      type: 2}
+    com.unity.xr.openxr.settings4: {fileID: 11400000, guid: 2d2dec64879445247bb34603b4469c6c,
+      type: 2}
