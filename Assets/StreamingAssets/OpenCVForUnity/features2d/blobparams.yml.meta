@@ -6,3 +6,10 @@ DefaultImporter:
   userData: 
   assetBundleName: 
   assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 21088
+  packageName: OpenCV for Unity
+  packageVersion: 3.0.0
+  assetPath: Assets/StreamingAssets/OpenCVForUnity/features2d/blobparams.yml
+  uploadId: 773759

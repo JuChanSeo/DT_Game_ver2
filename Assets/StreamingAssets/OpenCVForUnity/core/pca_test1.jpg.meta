@@ -67,3 +67,10 @@ TextureImporter:
   userData: 
   assetBundleName: 
   assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 21088
+  packageName: OpenCV for Unity
+  packageVersion: 3.0.0
+  assetPath: Assets/StreamingAssets/OpenCVForUnity/core/pca_test1.jpg
+  uploadId: 773759
