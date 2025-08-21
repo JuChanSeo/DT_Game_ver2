@@ -113,7 +113,6 @@ public class InferenceController_edit_sleep : MonoBehaviour
         face_renderer.SetBlendShapeWeight(0, 100);
         questM_daily_script = GameObject.Find("Quest_Manager").GetComponent<QuestManager_daily>();
         questM_weekly_script = GameObject.Find("Quest_Manager").GetComponent<QuestManager_weekly>();
-        set_difficulty();
 
         care_effect_script = GameObject.Find("care_effect_player").GetComponent<care_effect>();
         bgm_player_script = GameObject.Find("Audio player").GetComponent<bgm_player>();
@@ -284,6 +283,7 @@ public class InferenceController_edit_sleep : MonoBehaviour
         }
 
         //face_emo_edit_script.bool_fmodel = true;
+        set_difficulty();
         bgm_player_script.excute_narration("45");
         model_excute = true;
         time_remain = time_limit;

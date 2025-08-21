@@ -34,30 +34,44 @@ public class ctrl_statue : MonoBehaviour
         show_excuteTime_idx = 0;
         player_statu_script = GameObject.Find("player_statu").GetComponent<Player_statu>();
 
-        TMP_Text tmp_text_h = panel_hungry.gameObject.transform.GetChild(3).transform.GetComponent<TMP_Text>();
-        TMP_Text tmp_text_s = panel_sleep.gameObject.transform.GetChild(3).transform.GetComponent<TMP_Text>();
-        TMP_Text tmp_text_b = panel_bath.gameObject.transform.GetChild(3).transform.GetComponent<TMP_Text>();
-        TMP_Text tmp_text_i = panel_inti.gameObject.transform.GetChild(3).transform.GetComponent<TMP_Text>();
+        if (panel_hungry != null)
+        {
+            TMP_Text tmp_text_h = panel_hungry.gameObject.transform.GetChild(3).transform.GetComponent<TMP_Text>();
+            Debug.Log(player_statu_script.Level_hungry.ToString());
+            tmp_text_h.text = PlayerPrefs.GetInt("Level_hung").ToString();
+        }
+        if(panel_sleep != null) 
+        {
+            TMP_Text tmp_text_s = panel_sleep.gameObject.transform.GetChild(3).transform.GetComponent<TMP_Text>();
+            Debug.Log(player_statu_script.Level_sleep.ToString());
+            tmp_text_s.text = PlayerPrefs.GetInt("Level_slep").ToString();
 
-        Debug.Log(player_statu_script.Level_hungry.ToString());
-        Debug.Log(player_statu_script.Level_sleep.ToString());
-        Debug.Log(player_statu_script.Level_bath.ToString());
-        Debug.Log(player_statu_script.Level_intimity.ToString());
-        tmp_text_h.text = PlayerPrefs.GetInt("Level_hung").ToString();
-        tmp_text_s.text = PlayerPrefs.GetInt("Level_slep").ToString();
-        tmp_text_b.text = PlayerPrefs.GetInt("Level_bath").ToString();
-        tmp_text_i.text = PlayerPrefs.GetInt("Level_inti").ToString();
+        }
+        if(panel_bath != null)
+        {
+            TMP_Text tmp_text_b = panel_bath.gameObject.transform.GetChild(3).transform.GetComponent<TMP_Text>();
+            Debug.Log(player_statu_script.Level_bath.ToString());
+            tmp_text_b.text = PlayerPrefs.GetInt("Level_bath").ToString();
+        }
+        if(panel_inti != null)
+        {
+            TMP_Text tmp_text_i = panel_inti.gameObject.transform.GetChild(3).transform.GetComponent<TMP_Text>();
+            Debug.Log(player_statu_script.Level_intimity.ToString());
+            tmp_text_i.text = PlayerPrefs.GetInt("Level_inti").ToString();
+        }
 
-        ID = player_statu_script.ID;
-        PW = player_statu_script.Password;
-        PetName = player_statu_script.PetName;
+        if(ID_input != null && PW_input != null && PetName_input != null && level_pet_text != null)
+        {
+            ID = player_statu_script.ID;
+            PW = player_statu_script.Password;
+            PetName = player_statu_script.PetName;
+            ID_input.text = PlayerPrefs.GetString("ID");
+            PW_input.text = PlayerPrefs.GetString("Password");
+            PetName_input.text = PlayerPrefs.GetString("PetName");
 
+            level_pet_text.text = PlayerPrefs.GetInt("Level_pet").ToString();
+        }
 
-        ID_input.text = PlayerPrefs.GetString("ID");
-        PW_input.text = PlayerPrefs.GetString("Password");
-        PetName_input.text = PlayerPrefs.GetString("PetName");
-
-        level_pet_text.text = PlayerPrefs.GetInt("Level_pet").ToString();
     }
 
     // Update is called once per frame

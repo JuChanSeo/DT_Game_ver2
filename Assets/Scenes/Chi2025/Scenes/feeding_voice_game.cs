@@ -89,7 +89,6 @@ public class feeding_voice_game : MonoBehaviour
         //anim.Play("Walk_ahead");
         questM_daily_script = GameObject.Find("Quest_Manager").GetComponent<QuestManager_daily>();
         questM_weekly_script = GameObject.Find("Quest_Manager").GetComponent<QuestManager_weekly>();
-        set_difficulty();
 
         care_effect_script = GameObject.Find("care_effect_player").GetComponent<care_effect>();
         bgm_player_script = GameObject.Find("Audio player").GetComponent<bgm_player>();
@@ -195,7 +194,7 @@ public class feeding_voice_game : MonoBehaviour
 
         if (answer_idx == 0)
         {
-            if (true || result.Contains("멍") || result.Contains("멍") || result.Contains("일") || result.Contains("루") || result.Contains("와"))
+            if (result.Contains("멍") || result.Contains("멍") || result.Contains("일") || result.Contains("루") || result.Contains("와"))
             {
                 //Pet.transform.GetChild(3).transform.gameObject.SetActive(true);
                 //Pet.transform.GetChild(4).transform.gameObject.SetActive(true);
@@ -414,7 +413,7 @@ public class feeding_voice_game : MonoBehaviour
         {
             //실패 문구 보여주기
             logger_script.logger_master.insert_data("먹이주기 게임 실패. 게임 종료");
-            gameend_panel.SetActive(true);
+            //gameend_panel.SetActive(true);
             TextMeshProUGUI text_fail = GameObject.Find("Text_fail").GetComponent<TextMeshProUGUI>();
             text_fail.text = "다음 기회에 다시 도전해봐요!";
             Invoke("load_AR_scene", 4f);
@@ -439,6 +438,7 @@ public class feeding_voice_game : MonoBehaviour
             Invoke("load_AR_scene", 8f);
             return;
         }
+        set_difficulty();
         select_instruction();
         instruct_panel.SetActive(true);
         instruct_text.text = list_instruct[answer_idx];

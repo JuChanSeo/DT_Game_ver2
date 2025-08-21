@@ -39,7 +39,7 @@ public class cylinderTouchHandler : MonoBehaviour
     int cnt_succes;
     int cnt_fail;
     float time_limit;
-    int cnt_dirtys = 0;
+    int cnt_dirtys = 7;
 
     public ParticleSystem particlePrefab;
 
@@ -68,7 +68,7 @@ public class cylinderTouchHandler : MonoBehaviour
         time_limit = 10f;
         questM_daily_script = GameObject.Find("Quest_Manager").GetComponent<QuestManager_daily>();
         questM_weekly_script = GameObject.Find("Quest_Manager").GetComponent<QuestManager_weekly>();
-        set_difficulty();
+        
 
         care_effect_script = GameObject.Find("care_effect_player").GetComponent<care_effect>();
         bgm_player_script = GameObject.Find("Audio player").GetComponent<bgm_player>();
@@ -355,6 +355,7 @@ public class cylinderTouchHandler : MonoBehaviour
             return;
         }
 
+        set_difficulty();
         time_remain = time_limit;
         if (start_flag == false) start_flag = true;
         if (!info_panel.activeSelf) info_panel.SetActive(true);

@@ -54,7 +54,14 @@ public class send_dic
         foreach (KeyValuePair<string, string> kv in data_format)
         {
             //Debug.Log(kv.Key + "\t" + kv.Value);
-            formdata.Add(new MultipartFormDataSection(kv.Key, kv.Value));
+            if (string.IsNullOrEmpty(kv.Value))
+            {
+                Debug.LogError($"Key '{kv.Key}' has null or empty value!");
+            }
+            else
+            {
+                formdata.Add(new MultipartFormDataSection(kv.Key, kv.Value));
+            }
             //formdata.AddField(kv.Key, kv.Value);
             //Debug.Log(kv.Key + ":\t" + kv.Value);
         }

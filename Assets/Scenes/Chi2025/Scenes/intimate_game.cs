@@ -66,7 +66,6 @@ public class intimate_game : MonoBehaviour
         face_renderer = Pet.transform.GetChild(1).transform.GetChild(0).transform.GetChild(0).GetComponent<SkinnedMeshRenderer>();
         questM_daily_script = GameObject.Find("Quest_Manager").GetComponent<QuestManager_daily>();
         questM_weekly_script = GameObject.Find("Quest_Manager").GetComponent<QuestManager_weekly>();
-        set_difficulty();
 
         care_effect_script = GameObject.Find("care_effect_player").GetComponent<care_effect>();
         bgm_player_script = GameObject.Find("Audio player").GetComponent<bgm_player>();
@@ -215,7 +214,8 @@ public class intimate_game : MonoBehaviour
             return;
         }
 
-        if(!panel_instruct.activeSelf) panel_instruct.SetActive(true);
+        set_difficulty();
+        if (!panel_instruct.activeSelf) panel_instruct.SetActive(true);
         face_panel.SetActive(true);
         emo_picture_panel.gameObject.SetActive(true);
         face_emo_edit_inti_script.excute_emo_model = true;

@@ -29,7 +29,8 @@ public class Show_webacm : MonoBehaviour
             }
         }
         device = WebCamTexture.devices[currentIndex];
-
+        
+        Debug.Log(device.name);
         camTexture = new WebCamTexture(device.name);
         camTexture.requestedFPS = 10;
         display.texture = camTexture;
