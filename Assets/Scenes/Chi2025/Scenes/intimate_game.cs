@@ -31,7 +31,7 @@ public class intimate_game : MonoBehaviour
     int cnt_fail;
     int emo_idx;
 
-    float time_limit = 1f;
+    float time_limit;
     bool correct;
     List<string> emo_list = new List<string>();
     public List<Texture2D> emo_picture_list = new List<Texture2D>();
@@ -59,7 +59,7 @@ public class intimate_game : MonoBehaviour
         emo_list.Add("surprised");
         emo_list.Add("angry");
 
-        time_limit = 0;
+        time_limit = 1f;
         face_emo_edit_inti_script = GameObject.Find("facialexpression").GetComponent<face_emo_edit_intimate>();
         Pet = GameObject.Find("pomeLV0" + PlayerPrefs.GetInt("Level_pet").ToString());
         anim = Pet.GetComponent<Animator>();

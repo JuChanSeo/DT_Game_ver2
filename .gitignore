@@ -100,3 +100,6 @@ InitTestScene*.unity*
 
 #juchan_ignore_OpenCVForUnity
 /[Aa]ssets/OpenCVForUnity/
+
+#Build file not upload to git
+/build_DTGame/

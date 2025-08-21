@@ -60,7 +60,7 @@ public class Petctrl : MonoBehaviour
 		//txt_bubble.text = "테스트용 말풍선 입니다";
 
 		cnt = 0;
-		min_y = 0;
+		min_y = 5;
 		Center_device = new Vector2(Screen.width / 2f, Screen.height / 2f);
 		touch_pos = new Vector2(0, 0);
 		touched_mesh_pose = Vector3.zero;
@@ -121,6 +121,7 @@ public class Petctrl : MonoBehaviour
 		if (hasHit1 && hit1.transform.name.StartsWith("Mesh") && min_y > hit1.point.y)
 		{
 			min_y = hit1.point.y;
+			Debug.Log("check0" + "");
 		}
 
 		//if pet is in the scene and game mode is not set to true
@@ -129,6 +130,8 @@ public class Petctrl : MonoBehaviour
 
 		if (spawnedObject != null && spawnedObject.activeSelf == true && !interact_pet_script.bool_ball_play)
         {
+			Debug.Log("check1" + "\t" + hit1.point.y.ToString() + "\t" + min_y.ToString() +
+					   "\t" + track_flag.ToString() + "\t" + hit1.transform.name);
 
             if (Mathf.Abs((hit1.point.y - min_y) / min_y) < 0.05 && !track_flag
 				&& hit1.transform.name.StartsWith("Mesh"))//바닥근처를 터치할 경우에만
