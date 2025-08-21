@@ -53,7 +53,7 @@ public class feeding_voice_game : MonoBehaviour
     public QuestManager_daily questM_daily_script;
     public QuestManager_weekly questM_weekly_script;
 
-    float time_limit;
+    float time_limit = 1f;
     int cnt_answer;
 
 

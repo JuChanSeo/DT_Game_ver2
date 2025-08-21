@@ -38,7 +38,7 @@ public class cylinderTouchHandler : MonoBehaviour
 
     int cnt_succes;
     int cnt_fail;
-    float time_limit;
+    float time_limit = 1f;
     int cnt_dirtys = 7;
 
     public ParticleSystem particlePrefab;

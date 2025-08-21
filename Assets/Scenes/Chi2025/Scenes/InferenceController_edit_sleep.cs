@@ -80,7 +80,7 @@ public class InferenceController_edit_sleep : MonoBehaviour
     public QuestManager_daily questM_daily_script;
     public QuestManager_weekly questM_weekly_script;
 
-    float time_limit;
+    float time_limit = 1f;
     bool model_excute;
     //face_emo_edit face_emo_edit_script;
 
@@ -130,6 +130,7 @@ public class InferenceController_edit_sleep : MonoBehaviour
     private void Update()
     {
         slider_time.value = time_remain / time_limit;
+        Debug.Log(time_remain + "\t" + time_limit + "\t" + slider_time.value);
         if (start_flag)
         {
             if (time_remain > 0)
@@ -239,12 +240,12 @@ public class InferenceController_edit_sleep : MonoBehaviour
         }
         if (PlayerPrefs.GetInt("Level_slep") == 2)
         {
-            time_limit = 14f;
+            time_limit = 12.5f;
             fly.GetComponent<fly_randmoving>().speed_fly = 16f;
         }
         if (PlayerPrefs.GetInt("Level_slep") == 3)
         {
-            time_limit = 13f;
+            time_limit = 10f;
             fly.GetComponent<fly_randmoving>().speed_fly = 20f;
         }
 

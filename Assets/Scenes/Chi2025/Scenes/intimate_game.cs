@@ -31,7 +31,7 @@ public class intimate_game : MonoBehaviour
     int cnt_fail;
     int emo_idx;
 
-    float time_limit;
+    float time_limit = 1f;
     bool correct;
     List<string> emo_list = new List<string>();
     public List<Texture2D> emo_picture_list = new List<Texture2D>();
