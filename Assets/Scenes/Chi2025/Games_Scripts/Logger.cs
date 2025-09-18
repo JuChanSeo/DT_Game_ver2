@@ -148,7 +148,11 @@ public class send_dic
             cnt_send++;
             using (UnityWebRequest request = UnityWebRequest.Post(URL, formdata_send[i]))
             {
-                yield return request.SendWebRequest();
+
+                request.timeout = 2;
+                var op = request.SendWebRequest();
+
+                //yield return request.SendWebRequest();
 
                 if (request.result == UnityWebRequest.Result.ConnectionError)
                 {
@@ -171,11 +175,24 @@ public class send_dic
                     Debug.Log("성공!" + request.downloadHandler.text);
                     if (cnt_send == formdata_send.Count) formdata_send.Clear();
 
+                    yield break;
                 }
 
+                float t = 0;
+                while(!op.isDone && t < 1f)
+                {
+                    t += Time.unscaledDeltaTime;
+                    yield return null;
+                }
 
+                if (!op.isDone)
+                {
+                    request.Abort();
+                    Debug.LogWarning("Server address is inactivated.");
+                }
             }
         }
+
     }
 }
 
