@@ -365,7 +365,7 @@ public class face_emo_edit_intimate : MonoBehaviour
 
         if (webCamTextureToMatHelper.IsPlaying() && webCamTextureToMatHelper.DidUpdateThisFrame())
         {
-            //Debug.Log("dnn 실행 중");
+            Debug.Log("dnn 실행 중");
             Mat rgbaMat = webCamTextureToMatHelper.GetMat();
             //Debug.Log(imagetexture.width + "\t" + imagetexture.height);
             //Texture2D texture2D = new Texture2D(imagetexture.width, imagetexture.height, TextureFormat.RGBA32, false);
@@ -396,6 +396,7 @@ public class face_emo_edit_intimate : MonoBehaviour
                 ////gameObject.GetComponent<Renderer>().material.mainTexture = texture;
                 //Utils.matToTexture2D(rgbaMat, texture);
                 //gameObject.GetComponent<RawImage>().texture = texture;
+                Debug.Log("아직 excute_emo_model은 false 입니다");
                 return;
             }
 

@@ -49669,7 +49669,7 @@ GameObject:
   - component: {fileID: 419024183}
   - component: {fileID: 419024182}
   m_Layer: 0
-  m_Name: Spawner_ges
+  m_Name: Spawner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -121539,7 +121539,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 473d892bbaecf4a4d8f50fd56f74ffd3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawner_ges: {fileID: 419024182}
+  spawner: {fileID: 419024182}
   requiredTaps: 5
   tapText: {fileID: 1808925890}
   statusText: {fileID: 1156463055}
