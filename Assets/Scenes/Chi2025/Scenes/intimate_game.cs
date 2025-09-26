@@ -168,7 +168,7 @@ public class intimate_game : MonoBehaviour
         }
         else
         {
-            Debug.Log(text_emo.text + "\t" + emo_list[emo_idx]);
+            //Debug.Log(text_emo.text + "\t" + emo_list[emo_idx]);
         }
 
     }
@@ -230,7 +230,7 @@ public class intimate_game : MonoBehaviour
 
     public void setemotion_nodefault(string emo)
     {
-        Debug.Log(emo);
+        //Debug.Log(emo);
         if (emo == "neutral")
         {
             for (int i = 0; i < 7; i++)

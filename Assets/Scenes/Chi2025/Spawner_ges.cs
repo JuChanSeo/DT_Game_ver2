@@ -2,7 +2,7 @@ using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
 
-public class Spawner : MonoBehaviour
+public class Spawner_ges : MonoBehaviour
 {
     public GameObject notePrefab;
     public RectTransform spawnPoint;
