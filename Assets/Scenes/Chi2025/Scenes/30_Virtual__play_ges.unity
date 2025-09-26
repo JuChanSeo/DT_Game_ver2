@@ -49669,7 +49669,7 @@ GameObject:
   - component: {fileID: 419024183}
   - component: {fileID: 419024182}
   m_Layer: 0
-  m_Name: Spawner_ges
+  m_Name: Spawner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -62969,7 +62969,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 819, y: -715}
+  m_AnchoredPosition: {x: 855, y: -715}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &540731451
@@ -63058,7 +63058,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -123.42676, y: 0, z: -275.6703, w: -61.977173}
+  m_margin: {x: -123.42676, y: 0, z: -236.08508, w: -61.977173}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -71917,7 +71917,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -196.76025, y: 0, z: -236.08508, w: -61.977173}
+  m_margin: {x: -832.193, y: 0, z: -236.08508, w: -61.977173}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -121539,7 +121539,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 473d892bbaecf4a4d8f50fd56f74ffd3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawner_ges: {fileID: 419024182}
+  spawner: {fileID: 419024182}
   requiredTaps: 5
   tapText: {fileID: 1808925890}
   statusText: {fileID: 1156463055}

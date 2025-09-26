@@ -8,7 +8,7 @@ using TMPro;
 public class ges_game_manager : MonoBehaviour
 {
     [Header("Refs")]
-    public Spawner_ges spawner_ges;
+    public Spawner spawner;
 
 
     [Header("Rule")]
@@ -28,7 +28,7 @@ public class ges_game_manager : MonoBehaviour
 
     void Awake()
     {
-        spawner_ges.OnNoteSpawned += OnNoteSpawned;
+        spawner.OnNoteSpawned += OnNoteSpawned;
         UpdateTapUI();
         UpdateCounterUI();
         SetStatus("READY");
@@ -36,17 +36,17 @@ public class ges_game_manager : MonoBehaviour
 
     void OnDestroy()
     {
-        if (spawner_ges != null) spawner_ges.OnNoteSpawned -= OnNoteSpawned;
+        if (spawner != null) spawner.OnNoteSpawned -= OnNoteSpawned;
     }
 
     void Update()
     {
-        //if (Input.GetMouseButtonDown(0)) RegisterTap();
+        if (Input.GetMouseButtonDown(0)) RegisterTap();
 
-        //if (Input.touchCount > 0)
-        //    for (int i = 0; i < Input.touchCount; i++)
-        //        if (Input.touches[i].phase == TouchPhase.Began)
-        //            RegisterTap();
+        if (Input.touchCount > 0)
+            for (int i = 0; i < Input.touchCount; i++)
+                if (Input.touches[i].phase == TouchPhase.Began)
+                    RegisterTap();
     }
 
     void RegisterTap()
