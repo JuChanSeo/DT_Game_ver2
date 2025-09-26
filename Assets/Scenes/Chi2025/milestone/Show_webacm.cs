@@ -19,17 +19,18 @@ public class Show_webacm : MonoBehaviour
             camTexture = null;
         }
         WebCamDevice[] devices = WebCamTexture.devices;
-        Debug.Log("devices °¹¼ö:" + devices.Length);
+        Debug.Log(devices.Length);
         for(int i = 0; i< devices.Length; i++)
         {
-            if(devices[i].isFrontFacing && !devices[i].name.Contains("OBS"))
+            Debug.Log(devices[i].name);
+            if(devices[i].isFrontFacing)
             {
-                Debug.Log(devices[i].name);
                 currentIndex = i;
             }
         }
         device = WebCamTexture.devices[currentIndex];
         
+        Debug.Log(device.name);
         camTexture = new WebCamTexture(device.name);
         camTexture.requestedFPS = 10;
         display.texture = camTexture;
