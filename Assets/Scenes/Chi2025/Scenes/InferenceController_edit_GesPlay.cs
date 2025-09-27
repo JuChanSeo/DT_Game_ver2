@@ -85,6 +85,9 @@ public class InferenceController_edit_GesPlay : MonoBehaviour
 
 
     public Spawner spawner;
+    public Spawner_Ges spawner_ges;
+    public Spawner_Face spawner_face;
+
     #endregion
 
     #region MonoBehaviour Methods
@@ -241,10 +244,16 @@ public class InferenceController_edit_GesPlay : MonoBehaviour
         //bgm_player_script.excute_narration("45");
         model_excute = true;
         time_remain = time_limit;
-        spawner.Enable_spawn();
+        if(spawner!=null) spawner.Enable_spawn();
+        if (spawner_ges != null) spawner_ges.Enable_spawn();
+        if (spawner_face != null) spawner_face.Enable_spawn();
         if (start_flag == false) start_flag = true;
         if (gamestart_Button.activeSelf == true) gamestart_Button.SetActive(false);
-
+        if(SceneManager.GetActiveScene().name == "31_Virtual__play_ges_face")
+        {
+            var face_emo_edit_inti_script = GameObject.Find("facialexpression").GetComponent<face_emo_edit_intimate>();
+            face_emo_edit_inti_script.excute_emo_model = true;
+        }
     }
 
     #region Private Methods

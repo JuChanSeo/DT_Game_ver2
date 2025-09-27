@@ -23,7 +23,7 @@ public class Show_webacm : MonoBehaviour
         for(int i = 0; i< devices.Length; i++)
         {
             Debug.Log(devices[i].name);
-            if(devices[i].isFrontFacing)
+            if(devices[i].isFrontFacing && !devices[i].name.Contains("OBS"))
             {
                 currentIndex = i;
             }
